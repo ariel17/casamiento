@@ -10,28 +10,35 @@
         }
 
         @media print {
-          * {-webkit-print-color-adjust:exact;}
-          html, body {
-            width: 210mm;
-            height: 297mm;
+          * {
+            -webkit-print-color-adjust: exact;
           }
         }
 
-        body {
+
+        @media screen {
+          html, body {
+              margin: 0 10%;
+          }
+        }
+
+        html, body {
+            width: 210mm;
+            height: 297mm;
             font-family: 'Pacifico', cursive;
             font-size: 1.3em;
             text-align: center;
         }
 
-        div.guard {
-            background-image: url('guard.png') !important;
+        div.guarda {
+            background-image: url('guarda.png') !important;
             background-repeat: no-repeat;
             background-position: center; 
         }
     </style>
 </head>
 <body>
-    <div class="guard">&nbsp</div>
+    <div class="guarda">&nbsp</div>
 
     <h1>Telma y Ariel</h1>
 
@@ -68,6 +75,6 @@
     Esperamos de corazón que puedan venir
     </p>
 
-    <div class="guard">&nbsp</div>
+    <div class="guarda">&nbsp</div>
 </body>
 </html>
